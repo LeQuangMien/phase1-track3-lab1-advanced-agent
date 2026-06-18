@@ -1,0 +1,2452 @@
+{
+  "meta": {
+    "dataset": "hotpot_dev_120.json",
+    "mode": "mock",
+    "num_records": 240,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 120,
+      "em": 0.7833,
+      "avg_attempts": 1,
+      "avg_token_estimate": 1772.78,
+      "avg_latency_ms": 3311.4
+    },
+    "reflexion": {
+      "count": 120,
+      "em": 0.875,
+      "avg_attempts": 1.35,
+      "avg_token_estimate": 2581.06,
+      "avg_latency_ms": 5409.43
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.0917,
+      "attempts_abs": 0.35,
+      "tokens_abs": 808.28,
+      "latency_abs": 2098.03
+    }
+  },
+  "failure_modes": {
+    "react": {
+      "wrong_final_answer": 26,
+      "none": 94
+    },
+    "reflexion": {
+      "none": 105,
+      "wrong_final_answer": 15
+    }
+  },
+  "examples": [
+    {
+      "qid": "5a8c7595554299585d9e36b6",
+      "agent_type": "react",
+      "gold_answer": "Chief of Protocol",
+      "predicted_answer": "United States ambassador",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85ea095542994775f606a8",
+      "agent_type": "react",
+      "gold_answer": "Animorphs",
+      "predicted_answer": "Animorphs",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e3ea95542995a26add48d",
+      "agent_type": "react",
+      "gold_answer": "Greenwich Village, New York City",
+      "predicted_answer": "Greenwich Village, New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd94525542992ac4f382d2",
+      "agent_type": "react",
+      "gold_answer": "YG Entertainment",
+      "predicted_answer": "YG Entertainment",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85b2d95542997b5ce40028",
+      "agent_type": "react",
+      "gold_answer": "Eenasul Fateh",
+      "predicted_answer": "Eenasul Fateh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87ab905542996e4f3088c1",
+      "agent_type": "react",
+      "gold_answer": "3,677 seated",
+      "predicted_answer": "3,677 seated",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bbb64554299042af8f7cc",
+      "agent_type": "react",
+      "gold_answer": "Terry Richardson",
+      "predicted_answer": "Annie Morton is older than Terry Richardson.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7166395542994082a3e814",
+      "agent_type": "react",
+      "gold_answer": "Kansas Song",
+      "predicted_answer": "Kansas Song (We\u2019re From Kansas)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a877e5d5542993e715abf7d",
+      "agent_type": "react",
+      "gold_answer": "David Weissman",
+      "predicted_answer": "David Weissman",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3b0bf5542992ade7c6e39",
+      "agent_type": "react",
+      "gold_answer": "1999",
+      "predicted_answer": "1999",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6d09255429954757d337d",
+      "agent_type": "react",
+      "gold_answer": "from 1986 to 2013",
+      "predicted_answer": "1986 to 2013",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a75e05c55429976ec32bc5f",
+      "agent_type": "react",
+      "gold_answer": "9,984",
+      "predicted_answer": "9,984",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3e45655429976abd1bcd4",
+      "agent_type": "react",
+      "gold_answer": "the North Atlantic Conference",
+      "predicted_answer": "North Atlantic Conference",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0d4c9554299603e418468",
+      "agent_type": "react",
+      "gold_answer": "1969 until 1974",
+      "predicted_answer": "1969 to 1974",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7a8175542993210983ed8",
+      "agent_type": "react",
+      "gold_answer": "Pedro Rodr\u00edguez",
+      "predicted_answer": "Pedro Rodr\u00edguez",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6050f55429929b0807a5e",
+      "agent_type": "react",
+      "gold_answer": "Sonic",
+      "predicted_answer": "Miles \"Tails\" Prower",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adddccd5542997dc7907069",
+      "agent_type": "react",
+      "gold_answer": "keyboard function keys",
+      "predicted_answer": "Siri Remote",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae22b8d554299234fd0440f",
+      "agent_type": "react",
+      "gold_answer": "World's Best Goalkeeper",
+      "predicted_answer": "IFFHS World's Best Goalkeeper",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a722b8655429971e9dc9329",
+      "agent_type": "react",
+      "gold_answer": "Barton Lee Hazlewood",
+      "predicted_answer": "Nancy Sinatra; Lee Hazlewood",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf37a95542995ec70e8f97",
+      "agent_type": "react",
+      "gold_answer": "1838",
+      "predicted_answer": "1838",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a828c8355429966c78a6a50",
+      "agent_type": "react",
+      "gold_answer": "Henry J. Kaiser",
+      "predicted_answer": "Henry J. Kaiser",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a3e745542996c9b8d5e70",
+      "agent_type": "react",
+      "gold_answer": "Arena of Khazan",
+      "predicted_answer": "Arena of Khazan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac23ff0554299636651994d",
+      "agent_type": "react",
+      "gold_answer": "2000",
+      "predicted_answer": "March 14, 2000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0361155429925eb1afc2c",
+      "agent_type": "react",
+      "gold_answer": "Charles Eug\u00e8ne",
+      "predicted_answer": "Charles Nungesser and Fran\u00e7ois Coli",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abf63f15542997ec76fd3ea",
+      "agent_type": "react",
+      "gold_answer": "October 1922",
+      "predicted_answer": "October 1922",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ef2a75542995a26add583",
+      "agent_type": "react",
+      "gold_answer": "2000",
+      "predicted_answer": "2000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80721b554299485f5985ef",
+      "agent_type": "react",
+      "gold_answer": "World War II",
+      "predicted_answer": "World War I and World War II",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7571135542992d0ec05f98",
+      "agent_type": "react",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74106b55429979e288289e",
+      "agent_type": "react",
+      "gold_answer": "Mumbai",
+      "predicted_answer": "Mumbai, Maharashtra",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a79311755429970f5fffe67",
+      "agent_type": "react",
+      "gold_answer": "1962",
+      "predicted_answer": "1962",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2d3df554299194fa9352c",
+      "agent_type": "react",
+      "gold_answer": "sovereignty",
+      "predicted_answer": "Ethiopian sovereignty and independence.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a760ab65542994ccc918697",
+      "agent_type": "react",
+      "gold_answer": "Nelson Rockefeller",
+      "predicted_answer": "Nelson Rockefeller",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d54165542995f4f402256",
+      "agent_type": "react",
+      "gold_answer": "Yellowcraig",
+      "predicted_answer": "Firth of Forth",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab859a955429934fafe6d7b",
+      "agent_type": "react",
+      "gold_answer": "Phil Spector",
+      "predicted_answer": "Phil Spector",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add61d65542995b365fab21",
+      "agent_type": "react",
+      "gold_answer": "Organizations could come together to address global issues",
+      "predicted_answer": "World Summit of Nobel Peace Laureates",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbf698554299114383a0b5",
+      "agent_type": "react",
+      "gold_answer": "English Electric Canberra",
+      "predicted_answer": "English Electric Canberra",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e1027554299653c1aa15f",
+      "agent_type": "react",
+      "gold_answer": "2009 Big 12 Conference",
+      "predicted_answer": "2009, Big 12 Conference",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab84bf555429916710eb01f",
+      "agent_type": "react",
+      "gold_answer": "1,462",
+      "predicted_answer": "1,462 hypermarkets",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77724455429972597f153e",
+      "agent_type": "react",
+      "gold_answer": "Indianapolis Motor Speedway",
+      "predicted_answer": "Indianapolis Motor Speedway",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87c13f5542996e4f30890c",
+      "agent_type": "react",
+      "gold_answer": "Rome",
+      "predicted_answer": "New York City",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab96ab755429970cfb8eacd",
+      "agent_type": "react",
+      "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "predicted_answer": "Max Martin, Savan Kotecha, Ilya Salmanzadeh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a43eb5542996c9b8d5e82",
+      "agent_type": "react",
+      "gold_answer": "Marion, South Australia",
+      "predicted_answer": "Marion, South Australia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae73acb5542991e8301cc07",
+      "agent_type": "react",
+      "gold_answer": "Drifting",
+      "predicted_answer": "oversteering technique",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7320565542991f9a20c61d",
+      "agent_type": "react",
+      "gold_answer": "Keith Bostic",
+      "predicted_answer": "Keith Bostic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae32e125542991a06ce9946",
+      "agent_type": "react",
+      "gold_answer": "35,124",
+      "predicted_answer": "35,124",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b20335542996c9b8d5fb3",
+      "agent_type": "react",
+      "gold_answer": "shortest player ever to play in the National Basketball Association",
+      "predicted_answer": "Muggsy Bogues",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85fb085542994775f606de",
+      "agent_type": "react",
+      "gold_answer": "Ronald Shusett",
+      "predicted_answer": "Shusett",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77152355429966f1a36c2e",
+      "agent_type": "react",
+      "gold_answer": "821",
+      "predicted_answer": "821",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f4c8d554299458435d5a3",
+      "agent_type": "react",
+      "gold_answer": "more than 70 countries",
+      "predicted_answer": "More than 70 countries",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80840f554299485f59863b",
+      "agent_type": "react",
+      "gold_answer": "Charmed",
+      "predicted_answer": "Charmed",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8361b65542992ef85e22a0",
+      "agent_type": "react",
+      "gold_answer": "International Boxing Hall of Fame",
+      "predicted_answer": "International Boxing Hall of Fame",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7ba7a5542993210983f12",
+      "agent_type": "react",
+      "gold_answer": "Usher",
+      "predicted_answer": "Usher",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2acff55429921a00ab02b",
+      "agent_type": "react",
+      "gold_answer": "Bill Murray",
+      "predicted_answer": "Nick Lachey",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5aba7cfe554299232ef4a2fd",
+      "agent_type": "react",
+      "gold_answer": "Carabao Cup",
+      "predicted_answer": "Carabao Cup",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5aba0554299546bf82f17",
+      "agent_type": "react",
+      "gold_answer": "Teen Titans Go!",
+      "predicted_answer": "Raven",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1f4cb554299234fd0436d",
+      "agent_type": "react",
+      "gold_answer": "276,170 inhabitants",
+      "predicted_answer": "Strasbourg",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7e1fc55429952e35ea9cc",
+      "agent_type": "react",
+      "gold_answer": "orange",
+      "predicted_answer": "orange clothing",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae37c765542992f92d822d4",
+      "agent_type": "react",
+      "gold_answer": "Tromeo and Juliet",
+      "predicted_answer": "Tromeo and Juliet",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae33c4d5542992f92d82262",
+      "agent_type": "react",
+      "gold_answer": "William Jefferson Clinton",
+      "predicted_answer": "Bill Clinton",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77cb335542997042120b3a",
+      "agent_type": "react",
+      "gold_answer": "John John Florence",
+      "predicted_answer": "John John Florence",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b57f25542995d1e6f1371",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbf0a255429947ff17385a",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8db19d5542994ba4e3dd00",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab56e32554299637185c594",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Yes",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab29c24554299449642c932",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8133725542995ce29dcbdb",
+      "agent_type": "react",
+      "gold_answer": "Robert Erskine Childers DSC",
+      "predicted_answer": "Robert Erskine Childers",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2070a5542994d89d5b313",
+      "agent_type": "react",
+      "gold_answer": "Badly Drawn Boy",
+      "predicted_answer": "Badly Drawn Boy",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd259d55429924427fcf1a",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae4a3265542995ad6573de5",
+      "agent_type": "react",
+      "gold_answer": "Fujioka, Gunma",
+      "predicted_answer": "Japan",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc0a5d5542993f40c73c64",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cc50e554299452d57ba3e",
+      "agent_type": "react",
+      "gold_answer": "Letters to Cleo",
+      "predicted_answer": "Letters to Cleo",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab51dae5542991779162d82",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0e1e5542990783324e1a",
+      "agent_type": "react",
+      "gold_answer": "Scotch Collie",
+      "predicted_answer": "Scotch Collie",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e068b5542995085b37384",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc53f75542996e6852530a",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Yes",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7be2595542997c3ec972ac",
+      "agent_type": "react",
+      "gold_answer": "Adeline Virginia Woolf",
+      "predicted_answer": "Virginia Woolf",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7759fc5542993569682d60",
+      "agent_type": "react",
+      "gold_answer": "Canary Islands, Spain",
+      "predicted_answer": "Tenerife and La Gomera",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5aba749055429901930fa7d8",
+      "agent_type": "react",
+      "gold_answer": "director",
+      "predicted_answer": "Cinematographer and film director",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae224da554299234fd043ee",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac1b8ee5542994d76dccedc",
+      "agent_type": "react",
+      "gold_answer": "Levni Yilmaz",
+      "predicted_answer": "Lev Yilmaz",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a84c4135542994c784dda31",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a455c5542994f819ef1a7",
+      "agent_type": "react",
+      "gold_answer": "George Archainbaud",
+      "predicted_answer": "George Archainbaud",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add11935542994734353827",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Skin Yard is from the U.S., while Ostava is from Bulgaria.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8c5569554299240d9c2126",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8574945542997b5ce3fffb",
+      "agent_type": "react",
+      "gold_answer": "LaLee's Kin: The Legacy of Cotton",
+      "predicted_answer": "LaLee's Kin: The Legacy of Cotton",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7332935542991f9a20c67d",
+      "agent_type": "react",
+      "gold_answer": "Pirate's Cove",
+      "predicted_answer": "Catan",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2d1d755429921a00ab053",
+      "agent_type": "react",
+      "gold_answer": "Roberta Vinci",
+      "predicted_answer": "Roberta Vinci",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac298f9554299657fa28fc9",
+      "agent_type": "react",
+      "gold_answer": "Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.",
+      "predicted_answer": "Ian Watkins",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88d745554299206df2b378",
+      "agent_type": "react",
+      "gold_answer": "director",
+      "predicted_answer": "Filmmaker",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab642845542995eadeeff8e",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7633ad5542992db9473741",
+      "agent_type": "react",
+      "gold_answer": "The Seven Days Battles",
+      "predicted_answer": "Seven Days Battles",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cbf8c554299452d57b9f4",
+      "agent_type": "react",
+      "gold_answer": "Dinosaur",
+      "predicted_answer": "Dinosaur",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6ba245542995eadef007f",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab271fe554299449642c8a6",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Yes",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab8ee035542991b5579f04b",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a717d4c5542994082a3e854",
+      "agent_type": "react",
+      "gold_answer": "Pavel Sergeyevich Alexandrov",
+      "predicted_answer": "Pavel Alexandrov",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a834ed95542990548d0b1ca",
+      "agent_type": "react",
+      "gold_answer": "712 5th Avenue",
+      "predicted_answer": "712 Fifth Avenue",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7b7ff75542995eb53be93d",
+      "agent_type": "react",
+      "gold_answer": "Arthur Ignatius Conan Doyle",
+      "predicted_answer": "Arthur Conan Doyle",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc65e85542996e68525350",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac289ff5542996366519a02",
+      "agent_type": "react",
+      "gold_answer": "Marsilea",
+      "predicted_answer": "Marsilea",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9b29c554299743d22ebae",
+      "agent_type": "react",
+      "gold_answer": "Craig v. Boren",
+      "predicted_answer": "United States v. Paramount Pictures, Inc.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab1d7ac554299449642c7e6",
+      "agent_type": "react",
+      "gold_answer": "Ehretia",
+      "predicted_answer": "Ehretia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae058e855429945ae959331",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7b8749554299294a54a9db",
+      "agent_type": "react",
+      "gold_answer": "Thomas Loren Friedman",
+      "predicted_answer": "Thomas Friedman",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae4d3c95542990ba0bbb165",
+      "agent_type": "react",
+      "gold_answer": "Istanbul, Turkey",
+      "predicted_answer": "Istanbul",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a879ba55542993e715abfc3",
+      "agent_type": "react",
+      "gold_answer": "Scott Sidney",
+      "predicted_answer": "Alain Resnais",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab1e984554299340b525428",
+      "agent_type": "react",
+      "gold_answer": "Gulangyu",
+      "predicted_answer": "Gulangyu",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac5199a5542994611c8b38a",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6369655429953192ad2a1",
+      "agent_type": "react",
+      "gold_answer": "Eucryphia",
+      "predicted_answer": "Eucryphia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab8f7535542991b5579f0a7",
+      "agent_type": "react",
+      "gold_answer": "Sacred Planet",
+      "predicted_answer": "Sacred Planet",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d2afd5542995f4f402221",
+      "agent_type": "react",
+      "gold_answer": "Ferdi Taygan",
+      "predicted_answer": "Ferdi Taygan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7555215542996c70cfaee1",
+      "agent_type": "react",
+      "gold_answer": "Hey Pa! There's a Goat on the Roof",
+      "predicted_answer": "\"Hey Pa! There's a Goat on the Roof\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3ae475542995ef918c1e5",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "Yes",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7be5bd5542997c3ec972ba",
+      "agent_type": "react",
+      "gold_answer": "The Leonberger is a giant dog breed.",
+      "predicted_answer": "Leonberger",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7ec61a55429934daa2fc5f",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a867089554299211dda2b30",
+      "agent_type": "react",
+      "gold_answer": "Rolling Stone",
+      "predicted_answer": "Weekly Sh\u014dnen Jump",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a76387d554299109176e6ba",
+      "agent_type": "react",
+      "gold_answer": "Am Rong",
+      "predicted_answer": "Am Rong",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbd3ac55429931dba1458b",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8d93ad554299653c1aa13d",
+      "agent_type": "react",
+      "gold_answer": "Serri",
+      "predicted_answer": "Serri",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac4392e5542997ea680ca32",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8c7595554299585d9e36b6",
+      "agent_type": "reflexion",
+      "gold_answer": "Chief of Protocol",
+      "predicted_answer": "Chief of Protocol of the United States",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a85ea095542994775f606a8",
+      "agent_type": "reflexion",
+      "gold_answer": "Animorphs",
+      "predicted_answer": "Animorphs",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e3ea95542995a26add48d",
+      "agent_type": "reflexion",
+      "gold_answer": "Greenwich Village, New York City",
+      "predicted_answer": "Greenwich Village, New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd94525542992ac4f382d2",
+      "agent_type": "reflexion",
+      "gold_answer": "YG Entertainment",
+      "predicted_answer": "YG Entertainment",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a85b2d95542997b5ce40028",
+      "agent_type": "reflexion",
+      "gold_answer": "Eenasul Fateh",
+      "predicted_answer": "Eenasul Fateh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87ab905542996e4f3088c1",
+      "agent_type": "reflexion",
+      "gold_answer": "3,677 seated",
+      "predicted_answer": "3,677 seated",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7bbb64554299042af8f7cc",
+      "agent_type": "reflexion",
+      "gold_answer": "Terry Richardson",
+      "predicted_answer": "Annie Morton is older.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a7166395542994082a3e814",
+      "agent_type": "reflexion",
+      "gold_answer": "Kansas Song",
+      "predicted_answer": "Kansas Song (We\u2019re From Kansas)",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a877e5d5542993e715abf7d",
+      "agent_type": "reflexion",
+      "gold_answer": "David Weissman",
+      "predicted_answer": "David Weissman",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3b0bf5542992ade7c6e39",
+      "agent_type": "reflexion",
+      "gold_answer": "1999",
+      "predicted_answer": "1999",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6d09255429954757d337d",
+      "agent_type": "reflexion",
+      "gold_answer": "from 1986 to 2013",
+      "predicted_answer": "1986 to 2013",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a75e05c55429976ec32bc5f",
+      "agent_type": "reflexion",
+      "gold_answer": "9,984",
+      "predicted_answer": "9,984",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3e45655429976abd1bcd4",
+      "agent_type": "reflexion",
+      "gold_answer": "the North Atlantic Conference",
+      "predicted_answer": "North Atlantic Conference",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0d4c9554299603e418468",
+      "agent_type": "reflexion",
+      "gold_answer": "1969 until 1974",
+      "predicted_answer": "1969 to 1974",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7a8175542993210983ed8",
+      "agent_type": "reflexion",
+      "gold_answer": "Pedro Rodr\u00edguez",
+      "predicted_answer": "Pedro Rodr\u00edguez",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6050f55429929b0807a5e",
+      "agent_type": "reflexion",
+      "gold_answer": "Sonic",
+      "predicted_answer": "Kate Higgins",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5adddccd5542997dc7907069",
+      "agent_type": "reflexion",
+      "gold_answer": "keyboard function keys",
+      "predicted_answer": "keyboard function keys",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae22b8d554299234fd0440f",
+      "agent_type": "reflexion",
+      "gold_answer": "World's Best Goalkeeper",
+      "predicted_answer": "IFFHS World's Best Goalkeeper",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a722b8655429971e9dc9329",
+      "agent_type": "reflexion",
+      "gold_answer": "Barton Lee Hazlewood",
+      "predicted_answer": "Barton Lee Hazlewood",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5adf37a95542995ec70e8f97",
+      "agent_type": "reflexion",
+      "gold_answer": "1838",
+      "predicted_answer": "1838",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a828c8355429966c78a6a50",
+      "agent_type": "reflexion",
+      "gold_answer": "Henry J. Kaiser",
+      "predicted_answer": "Henry J. Kaiser",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a3e745542996c9b8d5e70",
+      "agent_type": "reflexion",
+      "gold_answer": "Arena of Khazan",
+      "predicted_answer": "Arena of Khazan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac23ff0554299636651994d",
+      "agent_type": "reflexion",
+      "gold_answer": "2000",
+      "predicted_answer": "March 14, 2000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0361155429925eb1afc2c",
+      "agent_type": "reflexion",
+      "gold_answer": "Charles Eug\u00e8ne",
+      "predicted_answer": "Charles Nungesser",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5abf63f15542997ec76fd3ea",
+      "agent_type": "reflexion",
+      "gold_answer": "October 1922",
+      "predicted_answer": "October 1922",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8ef2a75542995a26add583",
+      "agent_type": "reflexion",
+      "gold_answer": "2000",
+      "predicted_answer": "2000",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80721b554299485f5985ef",
+      "agent_type": "reflexion",
+      "gold_answer": "World War II",
+      "predicted_answer": "World War II",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a7571135542992d0ec05f98",
+      "agent_type": "reflexion",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74106b55429979e288289e",
+      "agent_type": "reflexion",
+      "gold_answer": "Mumbai",
+      "predicted_answer": "Mumbai, Maharashtra",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a79311755429970f5fffe67",
+      "agent_type": "reflexion",
+      "gold_answer": "1962",
+      "predicted_answer": "1962",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab2d3df554299194fa9352c",
+      "agent_type": "reflexion",
+      "gold_answer": "sovereignty",
+      "predicted_answer": "Ethiopian sovereignty and independence.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a760ab65542994ccc918697",
+      "agent_type": "reflexion",
+      "gold_answer": "Nelson Rockefeller",
+      "predicted_answer": "Nelson Rockefeller",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d54165542995f4f402256",
+      "agent_type": "reflexion",
+      "gold_answer": "Yellowcraig",
+      "predicted_answer": "Yellowcraig",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ab859a955429934fafe6d7b",
+      "agent_type": "reflexion",
+      "gold_answer": "Phil Spector",
+      "predicted_answer": "Phil Spector",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add61d65542995b365fab21",
+      "agent_type": "reflexion",
+      "gold_answer": "Organizations could come together to address global issues",
+      "predicted_answer": "peace forum",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5abbf698554299114383a0b5",
+      "agent_type": "reflexion",
+      "gold_answer": "English Electric Canberra",
+      "predicted_answer": "English Electric Canberra",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e1027554299653c1aa15f",
+      "agent_type": "reflexion",
+      "gold_answer": "2009 Big 12 Conference",
+      "predicted_answer": "2009, Big 12 Conference",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab84bf555429916710eb01f",
+      "agent_type": "reflexion",
+      "gold_answer": "1,462",
+      "predicted_answer": "1,462 hypermarkets",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77724455429972597f153e",
+      "agent_type": "reflexion",
+      "gold_answer": "Indianapolis Motor Speedway",
+      "predicted_answer": "Indianapolis Motor Speedway",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a87c13f5542996e4f30890c",
+      "agent_type": "reflexion",
+      "gold_answer": "Rome",
+      "predicted_answer": "Rome",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab96ab755429970cfb8eacd",
+      "agent_type": "reflexion",
+      "gold_answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "predicted_answer": "Max Martin, Savan Kotecha, Ilya Salmanzadeh",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a43eb5542996c9b8d5e82",
+      "agent_type": "reflexion",
+      "gold_answer": "Marion, South Australia",
+      "predicted_answer": "Marion, South Australia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae73acb5542991e8301cc07",
+      "agent_type": "reflexion",
+      "gold_answer": "Drifting",
+      "predicted_answer": "Drifting",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7320565542991f9a20c61d",
+      "agent_type": "reflexion",
+      "gold_answer": "Keith Bostic",
+      "predicted_answer": "Keith Bostic",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae32e125542991a06ce9946",
+      "agent_type": "reflexion",
+      "gold_answer": "35,124",
+      "predicted_answer": "35,124",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b20335542996c9b8d5fb3",
+      "agent_type": "reflexion",
+      "gold_answer": "shortest player ever to play in the National Basketball Association",
+      "predicted_answer": "Muggsy Bogues",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a85fb085542994775f606de",
+      "agent_type": "reflexion",
+      "gold_answer": "Ronald Shusett",
+      "predicted_answer": "Shusett",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77152355429966f1a36c2e",
+      "agent_type": "reflexion",
+      "gold_answer": "821",
+      "predicted_answer": "821",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f4c8d554299458435d5a3",
+      "agent_type": "reflexion",
+      "gold_answer": "more than 70 countries",
+      "predicted_answer": "More than 70 countries",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80840f554299485f59863b",
+      "agent_type": "reflexion",
+      "gold_answer": "Charmed",
+      "predicted_answer": "Charmed",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8361b65542992ef85e22a0",
+      "agent_type": "reflexion",
+      "gold_answer": "International Boxing Hall of Fame",
+      "predicted_answer": "International Boxing Hall of Fame",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7ba7a5542993210983f12",
+      "agent_type": "reflexion",
+      "gold_answer": "Usher",
+      "predicted_answer": "Usher",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2acff55429921a00ab02b",
+      "agent_type": "reflexion",
+      "gold_answer": "Bill Murray",
+      "predicted_answer": "David Boreanaz",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5aba7cfe554299232ef4a2fd",
+      "agent_type": "reflexion",
+      "gold_answer": "Carabao Cup",
+      "predicted_answer": "Carabao Cup",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5aba0554299546bf82f17",
+      "agent_type": "reflexion",
+      "gold_answer": "Teen Titans Go!",
+      "predicted_answer": "Teen Titans Go!",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ae1f4cb554299234fd0436d",
+      "agent_type": "reflexion",
+      "gold_answer": "276,170 inhabitants",
+      "predicted_answer": "276,170 inhabitants",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae7e1fc55429952e35ea9cc",
+      "agent_type": "reflexion",
+      "gold_answer": "orange",
+      "predicted_answer": "orange clothing",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae37c765542992f92d822d4",
+      "agent_type": "reflexion",
+      "gold_answer": "Tromeo and Juliet",
+      "predicted_answer": "Tromeo and Juliet",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae33c4d5542992f92d82262",
+      "agent_type": "reflexion",
+      "gold_answer": "William Jefferson Clinton",
+      "predicted_answer": "Bill Clinton",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77cb335542997042120b3a",
+      "agent_type": "reflexion",
+      "gold_answer": "John John Florence",
+      "predicted_answer": "John John Florence",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b57f25542995d1e6f1371",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbf0a255429947ff17385a",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8db19d5542994ba4e3dd00",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab56e32554299637185c594",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Yes",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ab29c24554299449642c932",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8133725542995ce29dcbdb",
+      "agent_type": "reflexion",
+      "gold_answer": "Robert Erskine Childers DSC",
+      "predicted_answer": "Robert Erskine Childers",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2070a5542994d89d5b313",
+      "agent_type": "reflexion",
+      "gold_answer": "Badly Drawn Boy",
+      "predicted_answer": "Badly Drawn Boy",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd259d55429924427fcf1a",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae4a3265542995ad6573de5",
+      "agent_type": "reflexion",
+      "gold_answer": "Fujioka, Gunma",
+      "predicted_answer": "Fujioka, Gunma, Japan",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5abc0a5d5542993f40c73c64",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cc50e554299452d57ba3e",
+      "agent_type": "reflexion",
+      "gold_answer": "Letters to Cleo",
+      "predicted_answer": "Letters to Cleo",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab51dae5542991779162d82",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0e1e5542990783324e1a",
+      "agent_type": "reflexion",
+      "gold_answer": "Scotch Collie",
+      "predicted_answer": "Scotch Collie",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e068b5542995085b37384",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc53f75542996e6852530a",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Yes",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a7be2595542997c3ec972ac",
+      "agent_type": "reflexion",
+      "gold_answer": "Adeline Virginia Woolf",
+      "predicted_answer": "Virginia Woolf",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7759fc5542993569682d60",
+      "agent_type": "reflexion",
+      "gold_answer": "Canary Islands, Spain",
+      "predicted_answer": "Teide National Park is located in Tenerife, and Garajonay National Park is located in La Gomera, both of which are part of the Canary Islands, Spain.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5aba749055429901930fa7d8",
+      "agent_type": "reflexion",
+      "gold_answer": "director",
+      "predicted_answer": "Cinematographer and film director",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae224da554299234fd043ee",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac1b8ee5542994d76dccedc",
+      "agent_type": "reflexion",
+      "gold_answer": "Levni Yilmaz",
+      "predicted_answer": "Lev Yilmaz",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a84c4135542994c784dda31",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a455c5542994f819ef1a7",
+      "agent_type": "reflexion",
+      "gold_answer": "George Archainbaud",
+      "predicted_answer": "George Archainbaud",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add11935542994734353827",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "Skin Yard is from the U.S., while Ostava is from Bulgaria.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a8c5569554299240d9c2126",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8574945542997b5ce3fffb",
+      "agent_type": "reflexion",
+      "gold_answer": "LaLee's Kin: The Legacy of Cotton",
+      "predicted_answer": "LaLee's Kin: The Legacy of Cotton",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7332935542991f9a20c67d",
+      "agent_type": "reflexion",
+      "gold_answer": "Pirate's Cove",
+      "predicted_answer": "Catan",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ac2d1d755429921a00ab053",
+      "agent_type": "reflexion",
+      "gold_answer": "Roberta Vinci",
+      "predicted_answer": "Roberta Vinci",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac298f9554299657fa28fc9",
+      "agent_type": "reflexion",
+      "gold_answer": "Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.",
+      "predicted_answer": "Ian Watkins",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88d745554299206df2b378",
+      "agent_type": "reflexion",
+      "gold_answer": "director",
+      "predicted_answer": "Filmmaker",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab642845542995eadeeff8e",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7633ad5542992db9473741",
+      "agent_type": "reflexion",
+      "gold_answer": "The Seven Days Battles",
+      "predicted_answer": "Seven Days Battles",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7cbf8c554299452d57b9f4",
+      "agent_type": "reflexion",
+      "gold_answer": "Dinosaur",
+      "predicted_answer": "Dinosaur",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6ba245542995eadef007f",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab271fe554299449642c8a6",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "documentary",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ab8ee035542991b5579f04b",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a717d4c5542994082a3e854",
+      "agent_type": "reflexion",
+      "gold_answer": "Pavel Sergeyevich Alexandrov",
+      "predicted_answer": "Pavel Alexandrov",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a834ed95542990548d0b1ca",
+      "agent_type": "reflexion",
+      "gold_answer": "712 5th Avenue",
+      "predicted_answer": "712 Fifth Avenue",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7b7ff75542995eb53be93d",
+      "agent_type": "reflexion",
+      "gold_answer": "Arthur Ignatius Conan Doyle",
+      "predicted_answer": "Arthur Conan Doyle",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc65e85542996e68525350",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac289ff5542996366519a02",
+      "agent_type": "reflexion",
+      "gold_answer": "Marsilea",
+      "predicted_answer": "Marsilea",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9b29c554299743d22ebae",
+      "agent_type": "reflexion",
+      "gold_answer": "Craig v. Boren",
+      "predicted_answer": "United States v. Paramount Pictures, Inc.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ab1d7ac554299449642c7e6",
+      "agent_type": "reflexion",
+      "gold_answer": "Ehretia",
+      "predicted_answer": "Ehretia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae058e855429945ae959331",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Chrysalis and Look are women's magazines.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7b8749554299294a54a9db",
+      "agent_type": "reflexion",
+      "gold_answer": "Thomas Loren Friedman",
+      "predicted_answer": "Thomas Friedman",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae4d3c95542990ba0bbb165",
+      "agent_type": "reflexion",
+      "gold_answer": "Istanbul, Turkey",
+      "predicted_answer": "Istanbul",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a879ba55542993e715abfc3",
+      "agent_type": "reflexion",
+      "gold_answer": "Scott Sidney",
+      "predicted_answer": "Alain Resnais",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ab1e984554299340b525428",
+      "agent_type": "reflexion",
+      "gold_answer": "Gulangyu",
+      "predicted_answer": "Gulangyu",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac5199a5542994611c8b38a",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6369655429953192ad2a1",
+      "agent_type": "reflexion",
+      "gold_answer": "Eucryphia",
+      "predicted_answer": "Eucryphia",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab8f7535542991b5579f0a7",
+      "agent_type": "reflexion",
+      "gold_answer": "Sacred Planet",
+      "predicted_answer": "Sacred Planet",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d2afd5542995f4f402221",
+      "agent_type": "reflexion",
+      "gold_answer": "Ferdi Taygan",
+      "predicted_answer": "Ferdi Taygan",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7555215542996c70cfaee1",
+      "agent_type": "reflexion",
+      "gold_answer": "Hey Pa! There's a Goat on the Roof",
+      "predicted_answer": "\"Hey Pa! There's a Goat on the Roof\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3ae475542995ef918c1e5",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "The Progressive Populist is a tabloid-style magazine, while Skeptical Inquirer is not classified as a tabloid-style magazine.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a7be5bd5542997c3ec972ba",
+      "agent_type": "reflexion",
+      "gold_answer": "The Leonberger is a giant dog breed.",
+      "predicted_answer": "Leonberger",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7ec61a55429934daa2fc5f",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a867089554299211dda2b30",
+      "agent_type": "reflexion",
+      "gold_answer": "Rolling Stone",
+      "predicted_answer": "Weekly Sh\u014dnen Jump",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a76387d554299109176e6ba",
+      "agent_type": "reflexion",
+      "gold_answer": "Am Rong",
+      "predicted_answer": "Am Rong",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbd3ac55429931dba1458b",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8d93ad554299653c1aa13d",
+      "agent_type": "reflexion",
+      "gold_answer": "Serri",
+      "predicted_answer": "Serri",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac4392e5542997ea680ca32",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding"
+  ],
+  "discussion": "Reflexion helps when the first attempt stops after the first hop or drifts to a wrong second-hop entity. The tradeoff is higher attempts, token cost, and latency. In a real report, students should explain when the reflection memory was useful, which failure modes remained, and whether evaluator quality limited gains."
+}
